@@ -1,0 +1,13 @@
+.display-3 {
+    color: #007bff;
+  }
+  
+  .lead {
+    font-size: 1.5rem;
+    color: #343a40;
+  }
+  
+  .btn-lg {
+    padding: 12px 30px;
+    border-radius: 25px;
+  }

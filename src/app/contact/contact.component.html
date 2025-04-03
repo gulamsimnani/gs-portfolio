@@ -1,0 +1,41 @@
+<div class="container py-5">
+    <h2 class="text-center mb-4">Contact Me</h2>
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Get in Touch</h5>
+            <p class="card-text">
+              <strong>Name:</strong> Gulam Simnani<br>
+              <strong>Mobile:</strong> +91-9284688334<br>
+              <strong>Email:</strong> <a href="mailto:gulam.simnani786@gmail.com">gulam.simnani786gmail.com</a>
+            </p>
+            <p class="card-text">
+              Feel free to reach out for freelance opportunities, project collaborations, or to discuss your next big idea!
+            </p>
+            <a href="/assets/Gulam_Simnani_Resume.pdf" download="Gulam_Simnani_Resume.pdf" class="btn btn-outline-primary mt-3">Download My Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-6 mx-auto">
+        <h4 class="text-center mb-3">Send Me a Message</h4>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" formControlName="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3" formControlName="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100" [disabled]="contactForm.invalid">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
